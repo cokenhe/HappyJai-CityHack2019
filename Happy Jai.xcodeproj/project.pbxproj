@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF1D40AA21FC490100657A5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D40A921FC490100657A5B /* AppDelegate.swift */; };
+		EF1D40B721FC490300657A5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1D40B521FC490300657A5B /* LaunchScreen.storyboard */; };
+		EF1D40C121FC4AAC00657A5B /* ChatroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D40C021FC4AAC00657A5B /* ChatroomViewController.swift */; };
+		EF1D40C521FC4C2900657A5B /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D40C421FC4C2900657A5B /* UIColor.swift */; };
+		EF1D40C721FC4E8000657A5B /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D40C621FC4E8000657A5B /* UIView.swift */; };
+		EF1D40CC21FC545600657A5B /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D40CB21FC545600657A5B /* MainController.swift */; };
+		EF1D40CE21FC5D3200657A5B /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D40CD21FC5D3200657A5B /* ChatViewController.swift */; };
+		EF1D40D021FC66E300657A5B /* ChatroomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D40CF21FC66E300657A5B /* ChatroomCell.swift */; };
+		EF1D40D221FCC8FD00657A5B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D40D121FCC8FD00657A5B /* String.swift */; };
+		EF1D40D621FCCB6900657A5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF1D40D521FCCB6900657A5B /* Assets.xcassets */; };
+		EF1D40D921FCCB9000657A5B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D40D821FCCB9000657A5B /* LoginViewController.swift */; };
+		EF1D40DB21FCCBA600657A5B /* LoginInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D40DA21FCCBA600657A5B /* LoginInputView.swift */; };
+		EF1D40DF21FCD61A00657A5B /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D40DE21FCD61A00657A5B /* ChatCell.swift */; };
+		EF1D40E421FCE4B800657A5B /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D40E321FCE4B800657A5B /* ChatMessage.swift */; };
+		EF1D40E621FCE59300657A5B /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D40E521FCE59300657A5B /* DateHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EF1D40A621FC490100657A5B /* Happy Jai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Happy Jai.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF1D40A921FC490100657A5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF1D40B621FC490300657A5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF1D40B821FC490300657A5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF1D40C021FC4AAC00657A5B /* ChatroomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomViewController.swift; sourceTree = "<group>"; };
+		EF1D40C421FC4C2900657A5B /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		EF1D40C621FC4E8000657A5B /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		EF1D40CB21FC545600657A5B /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		EF1D40CD21FC5D3200657A5B /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		EF1D40CF21FC66E300657A5B /* ChatroomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomCell.swift; sourceTree = "<group>"; };
+		EF1D40D121FCC8FD00657A5B /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		EF1D40D521FCCB6900657A5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF1D40D821FCCB9000657A5B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EF1D40DA21FCCBA600657A5B /* LoginInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInputView.swift; sourceTree = "<group>"; };
+		EF1D40DE21FCD61A00657A5B /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		EF1D40E321FCE4B800657A5B /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		EF1D40E521FCE59300657A5B /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF1D40A321FC490100657A5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF1D409D21FC490100657A5B = {
+			isa = PBXGroup;
+			children = (
+				EF1D40A821FC490100657A5B /* Happy Jai */,
+				EF1D40A721FC490100657A5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF1D40A721FC490100657A5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF1D40A621FC490100657A5B /* Happy Jai.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF1D40A821FC490100657A5B /* Happy Jai */ = {
+			isa = PBXGroup;
+			children = (
+				EF1D40E221FCE4AB00657A5B /* Model */,
+				EF1D40C221FC4BCD00657A5B /* Controller */,
+				EF1D40C321FC4BD900657A5B /* Helper */,
+				EF1D40BE21FC499600657A5B /* Support */,
+			);
+			path = "Happy Jai";
+			sourceTree = "<group>";
+		};
+		EF1D40BE21FC499600657A5B /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				EF1D40A921FC490100657A5B /* AppDelegate.swift */,
+				EF1D40D521FCCB6900657A5B /* Assets.xcassets */,
+				EF1D40B521FC490300657A5B /* LaunchScreen.storyboard */,
+				EF1D40B821FC490300657A5B /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		EF1D40BF21FC4A8E00657A5B /* Chatroom */ = {
+			isa = PBXGroup;
+			children = (
+				EF1D40DC21FCD5EA00657A5B /* Chatroom */,
+				EF1D40DD21FCD5FB00657A5B /* Chat */,
+			);
+			path = Chatroom;
+			sourceTree = "<group>";
+		};
+		EF1D40C221FC4BCD00657A5B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF1D40D721FCCB8200657A5B /* Login */,
+				EF1D40CA21FC544800657A5B /* Main */,
+				EF1D40BF21FC4A8E00657A5B /* Chatroom */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EF1D40C321FC4BD900657A5B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				EF1D40C421FC4C2900657A5B /* UIColor.swift */,
+				EF1D40C621FC4E8000657A5B /* UIView.swift */,
+				EF1D40D121FCC8FD00657A5B /* String.swift */,
+				EF1D40E521FCE59300657A5B /* DateHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		EF1D40CA21FC544800657A5B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EF1D40CB21FC545600657A5B /* MainController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EF1D40D721FCCB8200657A5B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EF1D40D821FCCB9000657A5B /* LoginViewController.swift */,
+				EF1D40DA21FCCBA600657A5B /* LoginInputView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EF1D40DC21FCD5EA00657A5B /* Chatroom */ = {
+			isa = PBXGroup;
+			children = (
+				EF1D40C021FC4AAC00657A5B /* ChatroomViewController.swift */,
+				EF1D40CF21FC66E300657A5B /* ChatroomCell.swift */,
+			);
+			name = Chatroom;
+			sourceTree = "<group>";
+		};
+		EF1D40DD21FCD5FB00657A5B /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				EF1D40CD21FC5D3200657A5B /* ChatViewController.swift */,
+				EF1D40DE21FCD61A00657A5B /* ChatCell.swift */,
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
+		EF1D40E221FCE4AB00657A5B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF1D40E321FCE4B800657A5B /* ChatMessage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF1D40A521FC490100657A5B /* Happy Jai */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF1D40BB21FC490300657A5B /* Build configuration list for PBXNativeTarget "Happy Jai" */;
+			buildPhases = (
+				EF1D40A221FC490100657A5B /* Sources */,
+				EF1D40A321FC490100657A5B /* Frameworks */,
+				EF1D40A421FC490100657A5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Happy Jai";
+			productName = "Happy Jai";
+			productReference = EF1D40A621FC490100657A5B /* Happy Jai.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF1D409E21FC490100657A5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Happy Jai";
+				TargetAttributes = {
+					EF1D40A521FC490100657A5B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = EF1D40A121FC490100657A5B /* Build configuration list for PBXProject "Happy Jai" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF1D409D21FC490100657A5B;
+			productRefGroup = EF1D40A721FC490100657A5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF1D40A521FC490100657A5B /* Happy Jai */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF1D40A421FC490100657A5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1D40D621FCCB6900657A5B /* Assets.xcassets in Resources */,
+				EF1D40B721FC490300657A5B /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF1D40A221FC490100657A5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1D40D921FCCB9000657A5B /* LoginViewController.swift in Sources */,
+				EF1D40C721FC4E8000657A5B /* UIView.swift in Sources */,
+				EF1D40DF21FCD61A00657A5B /* ChatCell.swift in Sources */,
+				EF1D40AA21FC490100657A5B /* AppDelegate.swift in Sources */,
+				EF1D40C521FC4C2900657A5B /* UIColor.swift in Sources */,
+				EF1D40C121FC4AAC00657A5B /* ChatroomViewController.swift in Sources */,
+				EF1D40CE21FC5D3200657A5B /* ChatViewController.swift in Sources */,
+				EF1D40CC21FC545600657A5B /* MainController.swift in Sources */,
+				EF1D40E621FCE59300657A5B /* DateHelper.swift in Sources */,
+				EF1D40DB21FCCBA600657A5B /* LoginInputView.swift in Sources */,
+				EF1D40E421FCE4B800657A5B /* ChatMessage.swift in Sources */,
+				EF1D40D221FCC8FD00657A5B /* String.swift in Sources */,
+				EF1D40D021FC66E300657A5B /* ChatroomCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF1D40B521FC490300657A5B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF1D40B621FC490300657A5B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF1D40B921FC490300657A5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF1D40BA21FC490300657A5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF1D40BC21FC490300657A5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3C6GV5QQP9;
+				INFOPLIST_FILE = "Happy Jai/Support/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "happyjai.cityhack2019.Happy-Jai";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF1D40BD21FC490300657A5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3C6GV5QQP9;
+				INFOPLIST_FILE = "Happy Jai/Support/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "happyjai.cityhack2019.Happy-Jai";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF1D40A121FC490100657A5B /* Build configuration list for PBXProject "Happy Jai" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF1D40B921FC490300657A5B /* Debug */,
+				EF1D40BA21FC490300657A5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF1D40BB21FC490300657A5B /* Build configuration list for PBXNativeTarget "Happy Jai" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF1D40BC21FC490300657A5B /* Debug */,
+				EF1D40BD21FC490300657A5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF1D409E21FC490100657A5B /* Project object */;
+}
