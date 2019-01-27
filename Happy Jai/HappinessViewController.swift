@@ -15,6 +15,25 @@ class HappinessViewController: UIViewController {
         setupViews()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        calculateHappiness()
+       
+    }
+    func calculateHappiness() {
+        
+        let percentage = ClassificationService.instance.getIndex()
+        percentageLabel.text = String(NSString(format:"%.2f", percentage*100)) + "%"
+        if percentage < 0.3 {
+            emojiLabel.text = "🤦‍♂️"
+        }
+        else if percentage < 0.7 {
+            emojiLabel.text = "😐"
+        }
+        else {
+            emojiLabel.text = "😄"
+        }
+    }
     let dialogueLabel: UILabel = {
         let label = UILabel()
         label.text = "Your hapiness today is"
@@ -31,6 +50,7 @@ class HappinessViewController: UIViewController {
     
     let percentageLabel: UILabel = {
         let label = UILabel()
+        
         label.text = "87%"
         label.font = UIFont.systemFont(ofSize: 60)
         return label
@@ -41,18 +61,19 @@ class HappinessViewController: UIViewController {
         button.backgroundColor = #colorLiteral(red: 1, green: 0.7019607843, blue: 0, alpha: 1)
         button.titleLabel?.textColor = .white
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
-        button.setTitle("Clear", for: .normal)
+        button.setTitle("Refresh", for: .normal)
         button.layer.cornerRadius = 24
         //        button.layer.masksToBounds = true
         button.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
         button.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
         button.layer.shadowOpacity = 1.0
         button.layer.shadowRadius = 0.0
-        button.addTarget(self, action: #selector(pressedClear(_:)), for: .touchUpInside)
+        button.addTarget(self, action: #selector(pressedRefresh(_:)), for: .touchUpInside)
         return button
     }()
-    @objc func pressedClear(_ sender: UIButton){
-        print("clear")
+    @objc func pressedRefresh(_ sender: UIButton){
+        print("button")
+        calculateHappiness()
     }
     func setupViews() {
         view.addSubview(dialogueLabel)

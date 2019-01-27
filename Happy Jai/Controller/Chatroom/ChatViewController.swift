@@ -64,6 +64,7 @@ class ChatViewController: UIViewController {
         guard let text = textField.text, text != "" else { return }
         chats.append(text)
         chatMessages.append(ChatMessage(text: text, isIncoming: false, date: Date()))
+        ClassificationService.instance.addMessage(text: text)
         textField.text = ""
         tableView.reloadData()
         scrollToBottom()
