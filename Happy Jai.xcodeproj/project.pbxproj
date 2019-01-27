@@ -29,6 +29,7 @@
 /* Begin PBXFileReference section */
 		5492B2D821FD678100E8973D /* SentimentPolarity.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = SentimentPolarity.mlmodel; path = ../../../Downloads/SentimentPolarity.mlmodel; sourceTree = "<group>"; };
 		5492B2DA21FD698B00E8973D /* HappinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappinessViewController.swift; sourceTree = "<group>"; };
+		5492B2DC21FD796400E8973D /* SentimentPolarity.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SentimentPolarity.mlmodel; sourceTree = "<group>"; };
 		EF1D40A621FC490100657A5B /* Happy Jai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Happy Jai.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF1D40A921FC490100657A5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF1D40B621FC490300657A5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -167,6 +168,7 @@
 		EF1D40E221FCE4AB00657A5B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5492B2DC21FD796400E8973D /* SentimentPolarity.mlmodel */,
 				EF1D40E321FCE4B800657A5B /* ChatMessage.swift */,
 			);
 			path = Model;
