@@ -17,19 +17,7 @@ class ChatViewController: UIViewController {
         "CITYHACK2019", "48 HRS CODING CHALLENGE"
     ]
 
-    var chatMessages = [
-        
-            ChatMessage(text: "Here's my very first Message", isIncoming: false, date: Date.dateFromCustomString(customString: "1/1/2017")),
-            ChatMessage(text: "Lorem ipsum dolor sit amet, munere similique theophrastus ius ut. In putant habemus democritum duo. Cu pri graeci meliore, nostrud bonorum vel ad. Eum an zril tacimates.", isIncoming: true, date: Date.dateFromCustomString(customString: "1/1/2017")),
-        
-            ChatMessage(text: "Yo", isIncoming: false, date:  Date.dateFromCustomString(customString: "21/5/2017")),
-            ChatMessage(text: "Hey dude what's up! Long time no see la wor", isIncoming: true, date: Date.dateFromCustomString(customString: "21/5/2017")),
-      
-            ChatMessage(text: "This is a message from the third section", isIncoming: false, date: Date.dateFromCustomString(customString: "22/5/2017")),
-            ChatMessage(text: "A Response", isIncoming: true, date: Date.dateFromCustomString(customString: "22/5/2017")),
-            ChatMessage(text: "A super super super super super super super super super super super super super super super super super super super super long message", isIncoming: true, date: Date.dateFromCustomString(customString: "22/5/2017"))
-       
-    ]
+    var chatMessages = MessageBank().chatMessages
 
     var bottomAnchor: NSLayoutConstraint?
     var keyboardHeight: CGFloat!
