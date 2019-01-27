@@ -27,4 +27,4 @@ open Happy\ Jai.xcodeproj/
 | Ken | [https://github.com/cokenhe](https://github.com/cokenhe) |
 | Paul | [https://github.com/commenstar](https://github.com/commenstar) |
 | Tony | [https://github.com/tychengaf](https://github.com/tychengaf) |
-| Wilfred | -- |
+| Wilfred | [https://github.com/wilfredkk](https://github.com/wilfredkk) |
