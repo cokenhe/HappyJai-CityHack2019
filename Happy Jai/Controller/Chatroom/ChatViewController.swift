@@ -17,21 +17,7 @@ class ChatViewController: UIViewController {
         "CITYHACK2019", "48 HRS CODING CHALLENGE"
     ]
 
-    var chatMessages = [
-        [
-            ChatMessage(text: "Here's my very first Message", isIncoming: false, date: Date.dateFromCustomString(customString: "1/1/2017")),
-            ChatMessage(text: "Lorem ipsum dolor sit amet, munere similique theophrastus ius ut. In putant habemus democritum duo. Cu pri graeci meliore, nostrud bonorum vel ad. Eum an zril tacimates.", isIncoming: true, date: Date.dateFromCustomString(customString: "1/1/2017"))
-        ],
-        [
-            ChatMessage(text: "Yo", isIncoming: false, date:  Date.dateFromCustomString(customString: "21/5/2017")),
-            ChatMessage(text: "Hey dude what's up! Long time no see la wor", isIncoming: true, date: Date.dateFromCustomString(customString: "21/5/2017"))
-        ],
-        [
-            ChatMessage(text: "This is a message from the third section", isIncoming: false, date: Date.dateFromCustomString(customString: "22/5/2017")),
-            ChatMessage(text: "A Response", isIncoming: true, date: Date.dateFromCustomString(customString: "22/5/2017")),
-            ChatMessage(text: "A super super super super super super super super super super super super super super super super super super super super long message", isIncoming: true, date: Date.dateFromCustomString(customString: "22/5/2017"))
-        ]
-    ]
+    var chatMessages = MessageBank().chatMessages
 
     var bottomAnchor: NSLayoutConstraint?
     var keyboardHeight: CGFloat!
@@ -77,18 +63,15 @@ class ChatViewController: UIViewController {
     @objc func handleSend(_ sender: UIButton) {
         guard let text = textField.text, text != "" else { return }
         chats.append(text)
-        chatMessages.append([ChatMessage(text: text, isIncoming: false, date: Date())])
+        chatMessages.append(ChatMessage(text: text, isIncoming: false, date: Date()))
         textField.text = ""
         tableView.reloadData()
         scrollToBottom()
     }
 
     func scrollToBottom() {
-        let section = chatMessages.count - 1
-        if (section >= 0) {
-            let row = chatMessages[section].count - 1
-            tableView.scrollToRow(at: IndexPath(row: row, section: section), at: .bottom, animated: true)
-        }
+        tableView.scrollToRow(at: IndexPath(row: chatMessages.count-1, section: 0), at: .bottom, animated: true)
+        
     }
 
     func setupViews() {
@@ -134,17 +117,13 @@ class ChatViewController: UIViewController {
 
 extension ChatViewController: UITableViewDelegate, UITableViewDataSource {
 
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return chatMessages.count
-    }
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return chatMessages[section].count
+        return chatMessages.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! ChatCell
-        cell.chatMessage = chatMessages[indexPath.section][indexPath.row]
+        cell.chatMessage = chatMessages[indexPath.item]
 //        cell.textLabel?.text = chats[indexPath.row]
         return cell
     }

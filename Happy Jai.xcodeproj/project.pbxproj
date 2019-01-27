@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5492B2D921FD678100E8973D /* SentimentPolarity.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5492B2D821FD678100E8973D /* SentimentPolarity.mlmodel */; };
 		5492B2DB21FD698B00E8973D /* HappinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5492B2DA21FD698B00E8973D /* HappinessViewController.swift */; };
 		EF1D40AA21FC490100657A5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D40A921FC490100657A5B /* AppDelegate.swift */; };
 		EF1D40B721FC490300657A5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1D40B521FC490300657A5B /* LaunchScreen.storyboard */; };
@@ -27,7 +26,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5492B2D821FD678100E8973D /* SentimentPolarity.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = SentimentPolarity.mlmodel; path = ../../../Downloads/SentimentPolarity.mlmodel; sourceTree = "<group>"; };
 		5492B2DA21FD698B00E8973D /* HappinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappinessViewController.swift; sourceTree = "<group>"; };
 		5492B2DC21FD796400E8973D /* SentimentPolarity.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SentimentPolarity.mlmodel; sourceTree = "<group>"; };
 		EF1D40A621FC490100657A5B /* Happy Jai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Happy Jai.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,7 +77,6 @@
 		EF1D40A821FC490100657A5B /* Happy Jai */ = {
 			isa = PBXGroup;
 			children = (
-				5492B2D821FD678100E8973D /* SentimentPolarity.mlmodel */,
 				EF1D40E221FCE4AB00657A5B /* Model */,
 				EF1D40C221FC4BCD00657A5B /* Controller */,
 				EF1D40C321FC4BD900657A5B /* Helper */,
@@ -257,7 +254,6 @@
 				EF1D40DB21FCCBA600657A5B /* LoginInputView.swift in Sources */,
 				EF1D40E421FCE4B800657A5B /* ChatMessage.swift in Sources */,
 				EF1D40D221FCC8FD00657A5B /* String.swift in Sources */,
-				5492B2D921FD678100E8973D /* SentimentPolarity.mlmodel in Sources */,
 				EF1D40D021FC66E300657A5B /* ChatroomCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

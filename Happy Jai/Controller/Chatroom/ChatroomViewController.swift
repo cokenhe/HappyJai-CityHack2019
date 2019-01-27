@@ -11,8 +11,8 @@ import UIKit
 class ChatroomViewController: UIViewController {
 
     let cellId = "cellId"
-    let rooms = ["9UP GROUP", "ON9 CHAT"]
-    let chats = ["FUCK", "YOU"]
+    let rooms = ["Exam's over. Oh...", "Just chilling","COMP1003 student anyone?","I lost my laptop"]
+    let chats = ["Yes thanks a lot.", "What music do you guys like?","Luckily got an A at last😅","sosad"]
 
     lazy var tableView: UITableView = {
         let view = UITableView(frame: .zero)
