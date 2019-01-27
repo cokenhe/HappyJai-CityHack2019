@@ -25,8 +25,7 @@ class MainController: UITabBarController {
         tabBar.tintColor = .secondaryColor
 
         let chatroomController = ChatroomViewController()
-        chatroomController.tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 0)
-
+        chatroomController.tabBarItem = UITabBarItem(title: "Chat", image: #imageLiteral(resourceName: "chatroom"), tag: 0)
         let favoritesView = UIViewController()
         favoritesView.view.backgroundColor = .primaryColor
         favoritesView.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
@@ -35,10 +34,9 @@ class MainController: UITabBarController {
         searchView.view.backgroundColor = .primaryColor
         searchView.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 2)
 
-        let settingView = UIViewController()
+        let settingView = HappinessViewController()
         settingView.view.backgroundColor = .primaryColor
-        settingView.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 3)
-
+        settingView.tabBarItem = UITabBarItem(title: "Hapiness", image: #imageLiteral(resourceName: "hapiness"), tag: 3)
         let tabBarItems = [
             chatroomController,
             favoritesView,

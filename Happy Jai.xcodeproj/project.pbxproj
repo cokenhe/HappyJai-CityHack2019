@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5492B2D921FD678100E8973D /* SentimentPolarity.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5492B2D821FD678100E8973D /* SentimentPolarity.mlmodel */; };
+		5492B2DB21FD698B00E8973D /* HappinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5492B2DA21FD698B00E8973D /* HappinessViewController.swift */; };
 		EF1D40AA21FC490100657A5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D40A921FC490100657A5B /* AppDelegate.swift */; };
 		EF1D40B721FC490300657A5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1D40B521FC490300657A5B /* LaunchScreen.storyboard */; };
 		EF1D40C121FC4AAC00657A5B /* ChatroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D40C021FC4AAC00657A5B /* ChatroomViewController.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5492B2D821FD678100E8973D /* SentimentPolarity.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = SentimentPolarity.mlmodel; path = ../../../Downloads/SentimentPolarity.mlmodel; sourceTree = "<group>"; };
+		5492B2DA21FD698B00E8973D /* HappinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappinessViewController.swift; sourceTree = "<group>"; };
 		EF1D40A621FC490100657A5B /* Happy Jai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Happy Jai.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF1D40A921FC490100657A5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF1D40B621FC490300657A5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,10 +78,12 @@
 		EF1D40A821FC490100657A5B /* Happy Jai */ = {
 			isa = PBXGroup;
 			children = (
+				5492B2D821FD678100E8973D /* SentimentPolarity.mlmodel */,
 				EF1D40E221FCE4AB00657A5B /* Model */,
 				EF1D40C221FC4BCD00657A5B /* Controller */,
 				EF1D40C321FC4BD900657A5B /* Helper */,
 				EF1D40BE21FC499600657A5B /* Support */,
+				5492B2DA21FD698B00E8973D /* HappinessViewController.swift */,
 			);
 			path = "Happy Jai";
 			sourceTree = "<group>";
@@ -240,6 +246,7 @@
 				EF1D40C721FC4E8000657A5B /* UIView.swift in Sources */,
 				EF1D40DF21FCD61A00657A5B /* ChatCell.swift in Sources */,
 				EF1D40AA21FC490100657A5B /* AppDelegate.swift in Sources */,
+				5492B2DB21FD698B00E8973D /* HappinessViewController.swift in Sources */,
 				EF1D40C521FC4C2900657A5B /* UIColor.swift in Sources */,
 				EF1D40C121FC4AAC00657A5B /* ChatroomViewController.swift in Sources */,
 				EF1D40CE21FC5D3200657A5B /* ChatViewController.swift in Sources */,
@@ -248,6 +255,7 @@
 				EF1D40DB21FCCBA600657A5B /* LoginInputView.swift in Sources */,
 				EF1D40E421FCE4B800657A5B /* ChatMessage.swift in Sources */,
 				EF1D40D221FCC8FD00657A5B /* String.swift in Sources */,
+				5492B2D921FD678100E8973D /* SentimentPolarity.mlmodel in Sources */,
 				EF1D40D021FC66E300657A5B /* ChatroomCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,7 +395,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3C6GV5QQP9;
+				DEVELOPMENT_TEAM = 2JZCZ6TA6R;
 				INFOPLIST_FILE = "Happy Jai/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -405,7 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3C6GV5QQP9;
+				DEVELOPMENT_TEAM = 2JZCZ6TA6R;
 				INFOPLIST_FILE = "Happy Jai/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

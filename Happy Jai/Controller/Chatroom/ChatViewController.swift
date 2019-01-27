@@ -11,7 +11,7 @@ import UIKit
 class ChatViewController: UIViewController {
 
     var roomTitle = ""
-
+    
     let cellId = "cellId"
     var chats = [
         "CITYHACK2019", "48 HRS CODING CHALLENGE"
