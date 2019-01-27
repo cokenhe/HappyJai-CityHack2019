@@ -32,7 +32,7 @@
 		5492B2DA21FD698B00E8973D /* HappinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappinessViewController.swift; sourceTree = "<group>"; };
 		54D1039E21FD9099000630F6 /* SentimentPolarity.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SentimentPolarity.mlmodel; sourceTree = "<group>"; };
 		54D103A021FDAB56000630F6 /* Sentiment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sentiment.swift; sourceTree = "<group>"; };
-		54D103A321FDABA2000630F6 /* ClassificationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClassificationService.swift; path = ../../../../Downloads/ClassificationService.swift; sourceTree = "<group>"; };
+		54D103A321FDABA2000630F6 /* ClassificationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassificationService.swift; sourceTree = "<group>"; };
 		EF1D40A621FC490100657A5B /* Happy Jai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Happy Jai.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF1D40A921FC490100657A5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF1D40B621FC490300657A5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -403,14 +403,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2JZCZ6TA6R;
+				DEVELOPMENT_TEAM = 3C6GV5QQP9;
 				INFOPLIST_FILE = "Happy Jai/Support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "happyjai.tychengaf.Happy-Jai";
+				PRODUCT_BUNDLE_IDENTIFIER = "happyjai.cityHack.Happy-Jai";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -422,14 +422,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2JZCZ6TA6R;
+				DEVELOPMENT_TEAM = 3C6GV5QQP9;
 				INFOPLIST_FILE = "Happy Jai/Support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "happyjai.tychengaf.Happy-Jai";
+				PRODUCT_BUNDLE_IDENTIFIER = "happyjai.cityHack.Happy-Jai";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
