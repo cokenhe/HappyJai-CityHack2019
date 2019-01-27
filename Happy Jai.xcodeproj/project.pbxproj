@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5492B2DB21FD698B00E8973D /* HappinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5492B2DA21FD698B00E8973D /* HappinessViewController.swift */; };
-		54D1039C21FD905E000630F6 /* Sentiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D1039A21FD905E000630F6 /* Sentiment.swift */; };
-		54D1039D21FD905E000630F6 /* ClassificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D1039B21FD905E000630F6 /* ClassificationService.swift */; };
 		54D1039F21FD9099000630F6 /* SentimentPolarity.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 54D1039E21FD9099000630F6 /* SentimentPolarity.mlmodel */; };
+		54D103A121FDAB56000630F6 /* Sentiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D103A021FDAB56000630F6 /* Sentiment.swift */; };
+		54D103A421FDABA2000630F6 /* ClassificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D103A321FDABA2000630F6 /* ClassificationService.swift */; };
 		EF1D40AA21FC490100657A5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D40A921FC490100657A5B /* AppDelegate.swift */; };
 		EF1D40B721FC490300657A5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1D40B521FC490300657A5B /* LaunchScreen.storyboard */; };
 		EF1D40C121FC4AAC00657A5B /* ChatroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D40C021FC4AAC00657A5B /* ChatroomViewController.swift */; };
@@ -30,9 +30,9 @@
 
 /* Begin PBXFileReference section */
 		5492B2DA21FD698B00E8973D /* HappinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappinessViewController.swift; sourceTree = "<group>"; };
-		54D1039A21FD905E000630F6 /* Sentiment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sentiment.swift; path = ../../../../Downloads/Sentiment.swift; sourceTree = "<group>"; };
-		54D1039B21FD905E000630F6 /* ClassificationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClassificationService.swift; path = ../../../../Downloads/ClassificationService.swift; sourceTree = "<group>"; };
 		54D1039E21FD9099000630F6 /* SentimentPolarity.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SentimentPolarity.mlmodel; sourceTree = "<group>"; };
+		54D103A021FDAB56000630F6 /* Sentiment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sentiment.swift; sourceTree = "<group>"; };
+		54D103A321FDABA2000630F6 /* ClassificationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClassificationService.swift; path = ../../../../Downloads/ClassificationService.swift; sourceTree = "<group>"; };
 		EF1D40A621FC490100657A5B /* Happy Jai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Happy Jai.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF1D40A921FC490100657A5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF1D40B621FC490300657A5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -125,8 +125,8 @@
 		EF1D40C321FC4BD900657A5B /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				54D1039B21FD905E000630F6 /* ClassificationService.swift */,
-				54D1039A21FD905E000630F6 /* Sentiment.swift */,
+				54D103A321FDABA2000630F6 /* ClassificationService.swift */,
+				54D103A021FDAB56000630F6 /* Sentiment.swift */,
 				EF1D40C421FC4C2900657A5B /* UIColor.swift */,
 				EF1D40C621FC4E8000657A5B /* UIView.swift */,
 				EF1D40D121FCC8FD00657A5B /* String.swift */,
@@ -249,12 +249,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF1D40D921FCCB9000657A5B /* LoginViewController.swift in Sources */,
+				54D103A121FDAB56000630F6 /* Sentiment.swift in Sources */,
 				EF1D40C721FC4E8000657A5B /* UIView.swift in Sources */,
 				EF1D40DF21FCD61A00657A5B /* ChatCell.swift in Sources */,
-				54D1039D21FD905E000630F6 /* ClassificationService.swift in Sources */,
 				EF1D40AA21FC490100657A5B /* AppDelegate.swift in Sources */,
 				5492B2DB21FD698B00E8973D /* HappinessViewController.swift in Sources */,
-				54D1039C21FD905E000630F6 /* Sentiment.swift in Sources */,
 				EF1D40C521FC4C2900657A5B /* UIColor.swift in Sources */,
 				EF1D40C121FC4AAC00657A5B /* ChatroomViewController.swift in Sources */,
 				EF1D40CE21FC5D3200657A5B /* ChatViewController.swift in Sources */,
@@ -264,6 +263,7 @@
 				EF1D40DB21FCCBA600657A5B /* LoginInputView.swift in Sources */,
 				EF1D40E421FCE4B800657A5B /* ChatMessage.swift in Sources */,
 				EF1D40D221FCC8FD00657A5B /* String.swift in Sources */,
+				54D103A421FDABA2000630F6 /* ClassificationService.swift in Sources */,
 				EF1D40D021FC66E300657A5B /* ChatroomCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,11 +405,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2JZCZ6TA6R;
 				INFOPLIST_FILE = "Happy Jai/Support/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "happyjai.cityhack2019.Happy-Jai";
+				PRODUCT_BUNDLE_IDENTIFIER = "happyjai.tychengaf.Happy-Jai";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -423,11 +424,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2JZCZ6TA6R;
 				INFOPLIST_FILE = "Happy Jai/Support/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "happyjai.cityhack2019.Happy-Jai";
+				PRODUCT_BUNDLE_IDENTIFIER = "happyjai.tychengaf.Happy-Jai";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -38,7 +38,10 @@ class MessageBank {
         chatMessages.append(ChatMessage(text: "God. You should improve by trying your very best", isIncoming: true, date: Date.dateFromCustomString(customString: "22/5/2017")))
         chatMessages.append(ChatMessage(text: "Yes thanks a lot.", isIncoming: false, date: Date.dateFromCustomString(customString: "22/5/2017")))
         for message in chatMessages {
-            ClassificationService.instance.addMessage(text: message.text)
+            if message.isIncoming == false{
+                ClassificationService.instance.addMessage(text: message.text)
+            }
+            
         }
 
     }
