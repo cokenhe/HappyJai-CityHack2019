@@ -17,7 +17,7 @@ class ChatViewController: UIViewController {
         "CITYHACK2019", "48 HRS CODING CHALLENGE"
     ]
 
-    var chatMessages = MessageBank().chatMessages
+    let messageBank = MessageBank.instance
 
     var bottomAnchor: NSLayoutConstraint?
     var keyboardHeight: CGFloat!
@@ -63,7 +63,7 @@ class ChatViewController: UIViewController {
     @objc func handleSend(_ sender: UIButton) {
         guard let text = textField.text, text != "" else { return }
         chats.append(text)
-        chatMessages.append(ChatMessage(text: text, isIncoming: false, date: Date()))
+        messageBank.chatMessages.append(ChatMessage(text: text, isIncoming: false, date: Date()))
         ClassificationService.instance.addMessage(text: text)
         textField.text = ""
         tableView.reloadData()
@@ -71,8 +71,7 @@ class ChatViewController: UIViewController {
     }
 
     func scrollToBottom() {
-        tableView.scrollToRow(at: IndexPath(row: chatMessages.count-1, section: 0), at: .bottom, animated: true)
-        
+        tableView.scrollToRow(at: IndexPath(row: messageBank.chatMessages.count-1, section: 0), at: .bottom, animated: true)
     }
 
     func setupViews() {
@@ -119,12 +118,12 @@ class ChatViewController: UIViewController {
 extension ChatViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return chatMessages.count
+        return messageBank.chatMessages.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! ChatCell
-        cell.chatMessage = chatMessages[indexPath.item]
+        cell.chatMessage = messageBank.chatMessages[indexPath.item]
 //        cell.textLabel?.text = chats[indexPath.row]
         return cell
     }

@@ -9,25 +9,47 @@
 import UIKit
 
 class HappinessViewController: UIViewController {
+
+    let AI = ClassificationService.instance
+    let duration: Double = 1.5
+    var startTime = Date()
+    var step: Double = 0
+    var fromValue: Double = 0
+    var toValue: Double = 0 {
+        didSet {
+            step = (toValue - fromValue) / (duration * 60)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
+
+        let displayLink = CADisplayLink(target: self, selector: #selector(calculateHappiness))
+        displayLink.add(to: .main, forMode: .default)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+
+        startTime = Date()
+        fromValue = AI.getCommitedIndex()
+        toValue = AI.getIndex()
+
         calculateHappiness()
-       
     }
-    func calculateHappiness() {
-        
-        let percentage = ClassificationService.instance.getIndex()
-        percentageLabel.text = String(NSString(format:"%.2f", percentage*100)) + "%"
-        if percentage < 0.3 {
+
+    @objc func calculateHappiness() {
+//        let percentage = startTime.timeIntervalSinceNow / duration
+//        let index = (toValue - fromValue) * percentage
+        fromValue += step
+        let value = step > 0 ? min(fromValue, toValue) : max(fromValue, toValue)
+        percentageLabel.text = String(NSString(format:"%.2f", value*100)) + "%"
+
+        if value < 0.3 {
             emojiLabel.text = "🤦‍♂️"
         }
-        else if percentage < 0.7 {
+        else if value < 0.7 {
             emojiLabel.text = "😐"
         }
         else {

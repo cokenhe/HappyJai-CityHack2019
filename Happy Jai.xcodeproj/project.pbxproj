@@ -87,7 +87,6 @@
 				EF1D40C221FC4BCD00657A5B /* Controller */,
 				EF1D40C321FC4BD900657A5B /* Helper */,
 				EF1D40BE21FC499600657A5B /* Support */,
-				5492B2DA21FD698B00E8973D /* HappinessViewController.swift */,
 			);
 			path = "Happy Jai";
 			sourceTree = "<group>";
@@ -115,6 +114,7 @@
 		EF1D40C221FC4BCD00657A5B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5492B2DA21FD698B00E8973D /* HappinessViewController.swift */,
 				EF1D40D721FCCB8200657A5B /* Login */,
 				EF1D40CA21FC544800657A5B /* Main */,
 				EF1D40BF21FC4A8E00657A5B /* Chatroom */,

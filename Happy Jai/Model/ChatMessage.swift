@@ -15,6 +15,9 @@ struct ChatMessage {
 }
 
 class MessageBank {
+
+    static let instance = MessageBank()
+    
     var chatMessages = [ChatMessage]()
     init() {
 //        chatMessages.append(ChatMessage(text: "Here's my very first Message", isIncoming: false, date: Date.dateFromCustomString(customString: "1/1/2017")))
@@ -41,7 +44,6 @@ class MessageBank {
             if message.isIncoming == false{
                 ClassificationService.instance.addMessage(text: message.text)
             }
-            
         }
 
     }

@@ -6,7 +6,8 @@ final class ClassificationService {
     }
 
     static let instance = ClassificationService()
-    private var hapiness = [Sentiment: Int]()
+    private var happiness = [Sentiment: Int]()
+    private var commitedIndex: Double = 0
 
     private let model = SentimentPolarity()
     private let options: NSLinguisticTagger.Options = [.omitWhitespace, .omitPunctuation, .omitOther]
@@ -72,11 +73,18 @@ private extension ClassificationService {
 extension ClassificationService {
     func addMessage(text: String) {
         let sentiment = predictSentiment(from: text)
-        hapiness[sentiment, default: 0] += 1
+        happiness[sentiment, default: 0] += 1
+
+        print(happiness)
     }
 
     func getIndex() -> Double {
-        let total = (hapiness[.negative] ?? 0) + (hapiness[.positive] ?? 0)
-        return Double((hapiness[.positive] ?? 0)) / Double(total)
+        let total = (happiness[.negative] ?? 0) + (happiness[.positive] ?? 0)
+        commitedIndex = total == 0 ? 0 : Double((happiness[.positive] ?? 0)) / Double(total)
+        return commitedIndex
+    }
+
+    func getCommitedIndex() -> Double {
+        return commitedIndex
     }
 }
