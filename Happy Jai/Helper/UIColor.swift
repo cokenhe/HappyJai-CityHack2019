@@ -22,4 +22,8 @@ extension UIColor {
         return UIColor(r: 255, g: 179, b: 0)
     }
     
+    static var whatsappGray: UIColor {
+        return UIColor(r: 236, g: 231, b: 222)
+    }
+    
 }

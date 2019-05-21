@@ -65,4 +65,20 @@ extension UIView {
 
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: format , options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: viewsDictionary))
     }
+    
+    func setShadow(opacity: Float?, offset: CGSize?, radius: CGFloat?) {
+        layer.shadowColor = UIColor.black.cgColor
+        if let opacity = opacity {
+            layer.shadowOpacity = opacity
+            
+        }
+        if let offset = offset {
+            layer.shadowOffset = offset
+            
+        }
+        if let radius = radius {
+            layer.shadowRadius = radius
+            
+        }
+    }
 }
