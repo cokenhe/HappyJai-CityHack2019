@@ -69,7 +69,7 @@ class ChatViewController: UIViewController {
         chats.append(text)
         messageBank.chatMessages.append(ChatMessage(text: text, isIncoming: false, date: Date()))
         messageInputTextView.text = ""
-        messageInputTextView.endEditing(true)
+       // messageInputTextView.endEditing(true)
         textViewDidChange(messageInputTextView)
         tableView.reloadData()
         scrollToBottom()
