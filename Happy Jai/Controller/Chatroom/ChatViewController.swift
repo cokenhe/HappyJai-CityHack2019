@@ -19,7 +19,29 @@ class ChatViewController: UIViewController {
     let cellId = "cellId"
     var chats = ["CITYHACK2019", "48 HRS CODING CHALLENGE"]
     let messageBank = MessageBank.instance
-
+    
+    lazy var alertController: MyAlertController = {
+        let controller = MyAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        controller.view.tintColor = .secondaryColor
+        let starAction = UIAlertAction(title: "Star", style: .default) { (action) in
+            print("starAction")
+        }
+        controller.addAction(starAction)
+        
+        let copyAction = UIAlertAction(title: "Copy", style: .default) { (action) in
+            if let text = controller.copyText {
+                
+                UIPasteboard.general.string = text
+            }
+        }
+        controller.addAction(copyAction)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        controller.addAction(cancelAction)
+        
+        return controller
+    }()
+    
     let messageInputContainerView: UIView = {
         
         let view = UIView()
@@ -44,7 +66,6 @@ class ChatViewController: UIViewController {
         
         let view = UITableView(frame: .zero)
         view.separatorStyle = .none
-        view.allowsSelection = false
         view.register(ChatCell.self, forCellReuseIdentifier: cellId)
         view.delegate = self
         view.dataSource = self
@@ -185,12 +206,30 @@ extension ChatViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! ChatCell
         cell.chatMessage = messageBank.chatMessages[indexPath.item]
         //        cell.textLabel?.text = chats[indexPath.row]
+        let tapGesture = UILongPressGestureRecognizer(target: self, action: #selector(handleTap))
+        cell.bubbleBackgroundView.addGestureRecognizer(tapGesture)
+        cell.bubbleBackgroundView.isUserInteractionEnabled = true
         return cell
     }
     
+    @objc func handleTap(sender: UILongPressGestureRecognizer){
+        if sender.state == UIGestureRecognizer.State.began {
+            view.endEditing(true)
+            resignFirstResponder()
+            let location: CGPoint = sender.location(in: tableView)
+            let ipath: IndexPath? = tableView.indexPathForRow(at: location)
+            let cell = tableView.cellForRow(at: ipath ?? IndexPath(row: 0, section: 0)) as! ChatCell
+            if let text = cell.messageLabel.text {
+                print(text)
+                alertController.copyText = text
+            }
+            present(alertController, animated: true, completion: nil)
+            becomeFirstResponder()
+        }
+    }
 }
 
-// MARK: TextView and KeyboardNotification
+// MARK: TextView
 
 extension ChatViewController: UITextViewDelegate {
     
@@ -235,6 +274,8 @@ extension ChatViewController: UITextViewDelegate {
     }
 }
 
+// MARK: KeyboardNotification
+
 extension ChatViewController {
     
     fileprivate func observeKeyboardNotifications() {
@@ -262,8 +303,8 @@ extension ChatViewController {
             let isKeyboardShowing = notification.name == UIResponder.keyboardWillShowNotification
             messageInputContainerViewBottomConstraint.constant = isKeyboardShowing ? -newHeight : 0
             UIView.animate(withDuration: 0, animations: {
-                self.view.layoutIfNeeded()
                 self.tableView.contentOffset.y += newHeight
+                self.view.layoutIfNeeded()
             })
         }
     }
@@ -279,3 +320,6 @@ extension ChatViewController {
     }
 }
 
+class MyAlertController: UIAlertController {
+    var copyText: String?
+}

@@ -37,10 +37,11 @@ class ChatCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
         backgroundColor = .clear
-
+        selectionStyle = .none
+        
         bubbleBackgroundView.backgroundColor = .yellow
         bubbleBackgroundView.translatesAutoresizingMaskIntoConstraints = false
-
+        
         bubbleBackgroundView.layer.cornerRadius = 12
         addSubview(bubbleBackgroundView)
         addSubview(messageLabel)

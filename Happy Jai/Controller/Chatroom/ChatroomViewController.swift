@@ -13,7 +13,8 @@ class ChatroomViewController: UIViewController {
     let cellId = "cellId"
     let rooms = ["Exam's over. Oh...", "Just chilling","COMP1003 student anyone?","I lost my laptop"]
     let chats = ["Yes thanks a lot.", "What music do you guys like?","Luckily got an A at last😅","sosad"]
-
+    var views: [ChatViewController] = []
+    
     lazy var tableView: UITableView = {
         let view = UITableView(frame: .zero)
         view.delegate = self
@@ -38,7 +39,7 @@ class ChatroomViewController: UIViewController {
 }
 
 
-extension ChatroomViewController : UITableViewDelegate, UITableViewDataSource {
+extension ChatroomViewController : UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate {
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
@@ -57,13 +58,15 @@ extension ChatroomViewController : UITableViewDelegate, UITableViewDataSource {
         cell.selectionStyle = .none
         cell.roomTitle = rooms[indexPath.row]
         cell.lastChat = chats[indexPath.row]
+        
+        let view = ChatViewController()
+        view.roomTitle = rooms[indexPath.row]
+        views.append(view)
         return cell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let view = ChatViewController()
-        view.roomTitle = rooms[indexPath.row]
-        navigationController?.pushViewController(view, animated: true)
+        navigationController?.pushViewController(views[indexPath.row], animated: true)
     }
     
 }
